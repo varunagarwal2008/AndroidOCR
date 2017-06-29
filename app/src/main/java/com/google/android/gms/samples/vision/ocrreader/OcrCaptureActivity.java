@@ -311,7 +311,7 @@ public final class OcrCaptureActivity extends AppCompatActivity {
 
         if (mCameraSource != null) {
             try {
-                mPreview.start(mCameraSource, mGraphicOverlay);
+                mPreview.start(mCameraSource, mGraphicOverlay); //Getting error at this place Error:(267, 32) error: incompatible types: com.google.android.gms.vision.CameraSource cannot be converted to com.example.varun.test2.ui.camera.CameraSource
             } catch (IOException e) {
                 Log.e(TAG, "Unable to start camera source.", e);
                 mCameraSource.release();
